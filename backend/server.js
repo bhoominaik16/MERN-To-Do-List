@@ -4,6 +4,7 @@ const mongoose = require('mongoose')
 const cors = require('cors')
 const dotenv = require('dotenv')
 const TodoModel = require('./models/Todos')
+const PORT = process.env.PORT || 5000;
 
 dotenv.config();
 
@@ -62,6 +63,6 @@ app.delete('/delete/:id', ((req, res) => {
         .catch(err => res.json(err))
 }))
 
-app.listen(3001, () => {
-    console.log("Server is Running")
+app.listen(PORT, "0.0.0.0", () => {
+    console.log(`Server is Running on port ${PORT}`)
 })
