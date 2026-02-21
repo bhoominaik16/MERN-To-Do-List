@@ -26,11 +26,11 @@ jobs:
         with:
           context: ./backend
           push: true
-          tags: yourdockerhubusername/todo-backend:latest
+          tags: bhoominaik16/todo-backend:latest
 
       - name: Build and Push Frontend Image
         uses: docker/build-push-action@v5
         with:
           context: ./frontend
           push: true
-          tags: yourdockerhubusername/todo-frontend:latest
+          tags: bhoominaik16/todo-frontend:latest
