@@ -48,12 +48,12 @@ The project is fully containerized using Docker and includes CI automation with 
 
 TaskFlow/
 │
-├── frontend/
-├── backend/
-├── docker-compose.yml
-├── deploy.py
-├── .github/workflows/ci.yml
-└── README.md
+├── frontend/   
+├── backend/   
+├── docker-compose.yml    
+├── deploy.py   
+├── .github/workflows/ci.yml   
+└── README.md   
 
 
 ## ⚙️ Environment Variables
