@@ -20,19 +20,19 @@ jobs:
       # Backend Install
       - name: Install Backend Dependencies
         run: |
-          cd server
+          cd backend
           npm install
 
       # Frontend Install
       - name: Install Frontend Dependencies
         run: |
-          cd client
+          cd frontend
           npm install
 
       # Frontend Build Test
       - name: Build Frontend
         run: |
-          cd client
+          cd frontend
           npm run build
 
       # Docker Build Validation
