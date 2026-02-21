@@ -9,7 +9,7 @@ export default function Schedule(){
             alert("Please add task first!")
         }
         else{
-            axios.post('http://localhost:3001/add', {task:task})
+            axios.post('http://localhost:5001/add', {task:task})
             .then(result=> {
                 location.reload()})
             .catch(err => console.log(err))

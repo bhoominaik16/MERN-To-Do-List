@@ -18,25 +18,25 @@ export default function Home(){
     const formattedDate = currentDate.toLocaleDateString(undefined, format);
 
     useEffect(() => {
-        axios.get('http://localhost:3001/gettodo')
+        axios.get('http://localhost:5001/gettodo')
             .then(result => setTodo(result.data))
             .catch(err => console.log(err))
     }, [])
 
     useEffect(() => {
-        axios.get('http://localhost:3001/getongoing')
+        axios.get('http://localhost:5001/getongoing')
             .then(result => setOngoing(result.data))
             .catch(err => console.log(err))
     }, [])
 
     useEffect(() => {
-        axios.get('http://localhost:3001/getdone')
+        axios.get('http://localhost:5001/getdone')
             .then(result => setDone(result.data))
             .catch(err => console.log(err))
     }, [])
 
     const handleSetOngoing = (id) => {
-        axios.put('http://localhost:3001/updateOngoing/'+id)
+        axios.put('http://localhost:5001/updateOngoing/'+id)
             .then(result => {
                 location.reload()
             })
@@ -44,7 +44,7 @@ export default function Home(){
     }
 
     const handleSetDone = (id) => {
-        axios.put('http://localhost:3001/updateDone/'+id)
+        axios.put('http://localhost:5001/updateDone/'+id)
             .then(result => { 
                 location.reload()
             })
@@ -53,7 +53,7 @@ export default function Home(){
     }
 
     const handleDelete = (id) => {
-        axios.delete('http://localhost:3001/delete/'+id)
+        axios.delete('http://localhost:5001/delete/'+id)
             .then(result => {
                 location.reload()
             })
