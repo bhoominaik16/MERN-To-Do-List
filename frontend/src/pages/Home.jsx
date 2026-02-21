@@ -62,7 +62,7 @@ export default function Home(){
     return(
         <>
         <header className="min-h-[8%] border-b-2 text-black flex items-end justify-between">
-            <h1 className="text-2xl font-bold py-4 px-2">List</h1>
+            <h1 className="text-2xl font-bold py-4 px-2">TaskFlow</h1>
             <h1 className="font-semibold py-4 px-2">{formattedDate}</h1>
         </header>
         <div className="p-5 grid lg:grid-cols-3 gap-2 xl:gap-5 min-h-[92%]">
