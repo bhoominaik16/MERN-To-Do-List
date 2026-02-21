@@ -7,11 +7,8 @@ def run_command(command):
         print(f"Error executing: {command}")
         sys.exit(1)
 
-print("Pulling latest changes...")
-run_command("git pull origin main")
-
-print("Building Docker containers...")
-run_command("docker compose build")
+print("Pulling latest Docker images...")
+run_command("docker compose pull")
 
 print("Starting services...")
 run_command("docker compose up -d")

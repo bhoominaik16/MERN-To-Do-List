@@ -2,7 +2,7 @@ version: "3.8"
 
 services:
   backend:
-    build: ./backend
+    image: bhoominaik16/todo-backend:latest
     container_name: todo_backend
     ports:
       - "5001:5000"
@@ -12,7 +12,7 @@ services:
       - mongo
 
   frontend:
-    build: ./frontend
+    image: bhoominaik16/todo-frontend:latest
     container_name: todo_frontend
     ports:
       - "3001:80"
