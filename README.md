@@ -46,8 +46,8 @@ The project is fully containerized using Docker and includes CI automation with 
 
 ## 📂 Project Structure
 
-TaskFlow/
-│
+TaskFlow/   
+│   
 ├── frontend/   
 ├── backend/   
 ├── docker-compose.yml    
@@ -60,8 +60,8 @@ TaskFlow/
 
 ### Backend (`backend/.env`)
 
-PORT=5000
-MONGO_URI=mongodb://mongo:27017/taskflow
+PORT=5000    
+MONGO_URI=mongodb://mongo:27017/taskflow    
 
 ### Frontend (`frontend/.env`)
 
@@ -83,15 +83,12 @@ docker compose up -d
 ### Access the Application
 
 Frontend:
-
 http://localhost:3001
 
 Backend:
-
 http://localhost:5001
 
 MongoDB:
-
 mongodb://localhost:27018
 
 ---
@@ -133,13 +130,13 @@ This simplifies server-side updates and ensures the latest CI-built images are d
 
 ## 🏗 Architecture Overview
 
-Browser
-   ↓
-Nginx (Frontend – Port 3001)
-   ↓
-Express Backend (Port 5000 inside container)
-   ↓
-MongoDB
+Browser   
+   ↓    
+Nginx (Frontend – Port 3001)    
+   ↓    
+Express Backend (Port 5000 inside container)    
+   ↓    
+MongoDB    
 
 Docker Port Mapping:
 
